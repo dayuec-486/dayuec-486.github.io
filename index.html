@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录</title>
+    <style>
+        body{
+            background:linear-gradient(
+                45deg,
+                rgba(36, 181, 197, 0.8),
+                rgb(22, 158, 192)
+                
+            )
+        }
+        #login{
+            width: 300px;
+            margin: 100px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1{
+            text-align: center;
+        }
+        input{
+            /* From Uiverse.io by Spacious74 */ 
+            width: 100%;
+            padding: 10px; 
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        /* From Uiverse.io by Spacious74 */ 
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(36, 181, 197, 0.8);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div id="login">
+        <h1>用户登录</h1>
+        <form action="">
+            <div class="form-item">
+                <label for="username">用户名：</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-item">
+                <label for="password">密码：</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-item">
+                <button type="submit" id="loginBtn">登录</button>
+        </form>
+    </div>
+</body>
+</html>
