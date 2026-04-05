@@ -3,84 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>用户登录</title>
+    <title>首页</title>
     <style>
         body{
-            background:linear-gradient(
-                45deg,
-                rgba(36, 181, 197, 0.8),
-                rgb(22, 158, 192)
-                
-            )
+            background:#1f98b9;
         }
-        #login{
-            width: 300px;
-            margin: 100px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1{
+        .qw{
             text-align: center;
+            color: white;
+            margin-top: 50px;
         }
-        input{
-            /* From Uiverse.io by Spacious74 */ 
-            width: 100%;
-            padding: 10px; 
-            margin: 10px 0;
-            border: 1px solid #ccc;
+        .ww{
+            color: white;
+            margin-top: 50px;
+        }
+        .loging{
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: rgba(36, 181, 197, 0.8);
+            color: white;
+            border: none;
             border-radius: 5px;
-            box-sizing: border-box;
+            cursor: pointer;
         }
-        /* From Uiverse.io by Spacious74 */ 
-    button {
-        width: 100%;
-        padding: 10px;
-        background-color: rgba(36, 181, 197, 0.8);
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+        .log{
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: rgba(36, 181, 197, 0.8);
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        #hezi{
+            width: 300px;
+            height: 150px;
+            background-color: rgba(217, 217, 217, 0.8);
+            margin: 50px auto;
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <div id="login">
-        <h1>用户登录</h1>
-        <form action="">
-            <div class="form-item">
-                <label for="username">用户名：</label>
-                <input type="text" id="username" name="username">
-            </div>
-            <div class="form-item">
-                <label for="password">密码：</label>
-                <input type="password" id="password" name="password">
-            </div>
-            <div class="form-item">
-                <button type="submit" id="loginBtn">登录</button>
-        </form>
+    <h1 class="qw">欢迎来到我的个人网站！</h1>
+    <p class="qw">这里是我的个人网站，欢迎访问！</p>
+    <button class="loging" onclick="alert('感谢访问！')">点击我</button>
+    <div id="hezi">
+        <p class="ww">我的B站UID</p>
+        <button class="log" onclick="alert('UID：3546958333479259')">点击查看</button>
     </div>
-    <script>
-        const form = document.querySelector('form');
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-            // 判断用户输入是否为空
-            const username = document.querySelector('#username').value;
-            const password = document.querySelector('#password').value;
-            if (!username || !password) {
-                alert('用户名和密码不能为空！');
-                return;
-            }
-            // 模拟登录成功
-            if (username === 'admin_dayuec' && password === '3546958333479259') {
-                alert('登录成功！');
-                // 跳转到首页
-                window.location.href = 'http.html';
-            } else {
-                alert('用户名或密码错误！');
-            }
-        });
-    </script>
+    <div id="hezi">
+        <p class="ww">我的猫站ID</p>
+        <button class="log" onclick="alert('ID：1204154358')">点击查看</button>
+    </div>
+    <img src="https://img95.699pic.com/photo/50086/8785.jpg_wh300.jpg" alt="图片加载失败" style="display: block; margin: 20px auto; border-radius: 10px;">
 </body>
 </html>
