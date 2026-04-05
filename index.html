@@ -61,5 +61,26 @@
                 <button type="submit" id="loginBtn">登录</button>
         </form>
     </div>
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            // 判断用户输入是否为空
+            const username = document.querySelector('#username').value;
+            const password = document.querySelector('#password').value;
+            if (!username || !password) {
+                alert('用户名和密码不能为空！');
+                return;
+            }
+            // 模拟登录成功
+            if (username === 'admin_dayuec' && password === '3546958333479259') {
+                alert('登录成功！');
+                // 跳转到首页
+                window.location.href = 'http.html';
+            } else {
+                alert('用户名或密码错误！');
+            }
+        });
+    </script>
 </body>
 </html>
